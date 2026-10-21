@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Littleton NH Weekend Hikes</title>
+  <meta name="description" content="Easy to moderate hikes within about 30 minutes of Littleton, NH, with trail maps and one-tap Waze navigation.">
+  <meta name="theme-color" content="#24412f">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Littleton NH Weekend Hikes</h1>
+    <p>About 30 minutes from Littleton. Two to four hours. Easy to moderate.</p>
+    <div class="day-toggle" role="group" aria-label="Choose a day">
+      <button id="btn-sat" type="button" data-day="sat" aria-pressed="true">Saturday</button>
+      <button id="btn-sun" type="button" data-day="sun" aria-pressed="false">Sunday</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="day-panel" class="day-panel" aria-live="polite"></section>
+    <section id="hikes" class="hikes" aria-label="Hikes"></section>
+
+    <section class="notes">
+      <h2>Before you go</h2>
+      <ul id="checklist"></ul>
+      <h4>More resources</h4>
+      <div id="general-links" class="links"></div>
+      <p class="muted small">
+        Distances, climb and times come from the linked sources and differ a little between them.
+        Drive times are estimates, and Waze shows the live ETA. Trailhead pins are approximate, so check the pin before you drive.
+        Data last reviewed October 21, 2026.
+      </p>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
